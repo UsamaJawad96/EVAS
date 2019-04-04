@@ -1,0 +1,46 @@
+.App__Background {
+  height: auto;
+  /*background-color: #ffffff;*/
+  background-color: #FFFFFF;
+  min-height: 100vh;
+}
+
+.Headline {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  margin-top:2;
+  width: 200;
+}
+
+.Subtitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top:0;
+  margin-bottom: 3%;
+  width: 200;
+}
+
+.StandardText {
+  text-align: center;
+  font-size: 16px;
+  margin-top:0;
+  margin-left: 3%;
+  width: 200;
+}
+
+.VoteButton {
+  margin-left: 35vw;
+  margin-top: 2%;
+  width: 30vw;
+}
+
+.PartyText {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top:0;
+  margin-bottom: 1%;
+  width: 200;
+}

@@ -1,26 +1,39 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+//import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
+//import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, NavLink, Switch } from 'react-router-dom';
+import SignInForm from './pages/SignInForm';
+import ContactUsForm from './pages/ContactUsForm';
+import SupervisorDashboard from './pages/SupervisorDashboard';
+import HandleRequests from './pages/HandleRequests';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+
+      <Router>
+        <Switch>
+          <Route exact path="/" component={SignInForm}>
+
+          </Route>
+
+          <Route path="/contact-us" component={ContactUsForm}>
+
+          </Route>
+
+          <Route exact path="/SupervisorDashboard" component={SupervisorDashboard}>
+
+          </Route>
+
+          <Route exact path="/HandleRequests" component={HandleRequests}>
+
+          </Route>
+
+        </Switch>
+
+
+      </Router>
     );
   }
 }
